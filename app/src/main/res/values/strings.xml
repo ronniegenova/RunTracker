@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RunTracker</string>
+    <string name="title_activity_any_chart_example">AnyChartExampleActivity</string>
+    <string name="title_activity_add_run">AddRunActivity</string>
 </resources>
