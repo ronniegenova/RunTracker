@@ -3,7 +3,7 @@ package com.example.runtracker;
 public class Run {
 
     //TODO Verify 'Undefined' is what I want.
-    protected enum Type
+    public enum Type
     {
         UNDEFINED,
         BASE,
@@ -18,27 +18,33 @@ public class Run {
 
     protected Date myDate;
     protected Type myType;
-    protected Double myMiles;
-    protected Integar myIntensity;
-    protected Double myElevGain;
+    protected double myMiles;
+    protected int myIntensity;
+    protected int myElevGain;
     protected Shoe myShoes;
 
-    //TODO Need to initialize anything? I'm sorta thinking no.
-    Run () {}
+    Run (Date theDate, Type theType, double theMiles, int theIntensity, int theElevGain, Shoe theShoes) {
+      myDate = theDate;
+      myType = theType;
+      myMiles = theMiles;
+      myIntensity = theIntensity;
+      myElevGain = theElevGain;
+      myShoes = theShoes;
+    }
 
     // Getters
     public final Date getDate() {
         return myDate;
     }
 
-    public final Double getElevGain() {
+    public final int getElevGain() {
         return myElevGain;
     }
 
-    public final Double getIntensity() {
+    public final double getIntensity() {
         return myIntensity;
     }
-    public final Double getMiles() {
+    public final double getMiles() {
         return myMiles;
     }
     public final Shoe getShoes() {
@@ -50,15 +56,15 @@ public class Run {
         myDate = theDate;
     }
 
-    public void setElevGain(Double theElevGain) {
+    public void setElevGain(int theElevGain) {
         myElevGain = theElevGain;
     }
 
-    public void setIntensity(Integar theIntensity) {
+    public void setIntensity(int theIntensity) {
         myIntensity = theIntensity;
     }
 
-    public void setMiles(Double theMiles) {
+    public void setMiles(double theMiles) {
         myMiles = theMiles;
     }
 
