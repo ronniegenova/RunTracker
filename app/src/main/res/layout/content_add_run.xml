@@ -39,6 +39,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView3">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/milesTextInput"
             android:layout_width="match_parent"
             android:layout_height="49dp"
             android:hint="1.0"
